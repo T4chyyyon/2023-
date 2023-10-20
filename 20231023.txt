@@ -1,0 +1,9 @@
+int main(void)
+{
+    //メッセージを表示します
+    /*Helloを表示しないように変更する
+    printf("hello Programming in C world!\n"); /*Helloを表示*/
+    printf("Good-bye Programming in C world\n"); //Good-byeを表示
+   
+    return 0;
+}
