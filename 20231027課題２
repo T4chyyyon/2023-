@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main(void)
+{
+    int x;
+
+    //判断する数字の入力
+    printf("数字を入力してください");
+    scanf_s("%d", &x);
+
+    //偶数か奇数か判断する
+    printf("この数字は");
+        if (x % 2 == 0)
+        {
+            printf("偶数");
+    }
+        else
+    {
+            printf("奇数");
+    }
+
+   
+
+    return 0;
+}
