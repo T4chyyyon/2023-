@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(void)
+{
+  char d;
+    
+    printf("Please Enter English Words:");
+
+    scanf_s("%c" ,& d);
+    if (d >= 'A' && d <= 'Z')
+    printf("大文字が含まれています\n");
+      if (d>='a' && d <= 'z')
+      printf("大文字は含まれていません\n");
+    
+    
+
+    return 0;
+}
+    
