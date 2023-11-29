@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char d[100];
+    printf("パスワードを入力してください");
+    fgets(d, sizeof(d), stdin);
+    
+    int big = 0;
+    int small = 0;
+    int sonota = 0;
+    int length = strlen(d);
+    
+    for (int i = 0; i < length; i++) {
+        if (d[i] >= 'A' && d[i] <= 'Z') {
+            big++;
+        } else if (d[i] >= 'a' && d[i] <= 'z') {
+            small++;
+        } else {
+            sonota++;
+        }
+    }
+    
+    if (length >= 8 && length <= 16) {
+        if (big > 0 && small > 0 && sonota > 0) {
+            printf("条件に合うパスワードです");
+        } else {
+            printf("条件に合わないパスワードです");
+        }
+    } else {
+        printf("条件に合わないパスワードです");
+    }
+    
+    return 0;
+}
