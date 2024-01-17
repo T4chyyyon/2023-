@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(void)
+{
+    int a,b,c,d;
+   
+    printf("Please Enter Number a(a≠0):");
+    scanf_s("%d",&a);
+    printf("Please Enter Number b:");
+    scanf_s("%d",&b);
+    printf("Please Enter Number c:");
+    scanf_s("%d",&c);
+    
+    d=b*b-4*a*c;
+    if(d>0)
+    {
+        printf("dは実数解が2つ持っている");
+    }
+    else if(d==0)
+    {
+        printf("dは実数解を1つ持っている");
+    }
+    else
+    {
+        printf("dは虚数解である");
+    }
+    
+   
+    return 0;
+}
